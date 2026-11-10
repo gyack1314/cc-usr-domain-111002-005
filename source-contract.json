@@ -1,0 +1,10 @@
+{
+  "phases": [
+    "base",
+    "failed-options",
+    "out-of-order"
+  ],
+  "out-of-order": "北区选项等待version从1变2，南区可先完成；来源运维释放后旧北区结果会晚到",
+  "loading": "data-loading=false为加载完成，error为失败，空分支只有请选择占位项",
+  "result": "data-signature和data-request-id绑定查询"
+}
