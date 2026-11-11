@@ -1,0 +1,7 @@
+{
+  "regions": "all",
+  "kinds": "all",
+  "projects": "all",
+  "max_attempts": 3,
+  "timeout_ms": 5000
+}

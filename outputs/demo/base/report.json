@@ -1,0 +1,110 @@
+{
+  "generator": "collector/1.0",
+  "portal": "http://127.0.0.1:35551/",
+  "intent": {
+    "regions": "all",
+    "kinds": "all",
+    "projects": "all",
+    "max_attempts": 3,
+    "timeout_ms": 5000
+  },
+  "started_at": "2026-11-11T16:21:49.098554+00:00",
+  "finished_at": "2026-11-11T16:21:50.790472+00:00",
+  "entries": [
+    {
+      "region": {
+        "value": "r-n",
+        "label": "中心区",
+        "parent": null
+      },
+      "kind": {
+        "value": "k-n",
+        "label": "生产场所",
+        "parent": "r-n"
+      },
+      "project": {
+        "value": "p-n",
+        "label": "常规检测",
+        "parent": "k-n"
+      },
+      "status": "completed",
+      "attempts": 1,
+      "signature": "r-n|k-n|p-n",
+      "request_id": "Q-1",
+      "hits": [
+        "SAME-17@1"
+      ],
+      "note": "",
+      "error": null,
+      "history": []
+    },
+    {
+      "region": {
+        "value": "r-s",
+        "label": "中心区",
+        "parent": null
+      },
+      "kind": {
+        "value": "k-s",
+        "label": "生产场所",
+        "parent": "r-s"
+      },
+      "project": {
+        "value": "p-s",
+        "label": "常规检测",
+        "parent": "k-s"
+      },
+      "status": "completed",
+      "attempts": 1,
+      "signature": "r-s|k-s|p-s",
+      "request_id": "Q-2",
+      "hits": [
+        "SAME-17@1"
+      ],
+      "note": "",
+      "error": null,
+      "history": []
+    },
+    {
+      "region": {
+        "value": "r-e",
+        "label": "空区域",
+        "parent": null
+      },
+      "kind": null,
+      "project": null,
+      "status": "empty",
+      "attempts": 1,
+      "signature": "r-e||",
+      "request_id": "Q-3",
+      "hits": [],
+      "note": "空分支: 该区域没有场所类型选项",
+      "error": null,
+      "history": []
+    }
+  ],
+  "unsatisfiable": [],
+  "materials": {
+    "SAME-17@1": {
+      "id": "SAME-17",
+      "version": "1",
+      "content": "r-n|k-n|p-n 检测资料",
+      "other_contents": [
+        "r-s|k-s|p-s 检测资料"
+      ],
+      "signatures": [
+        "r-n|k-n|p-n",
+        "r-s|k-s|p-s"
+      ]
+    }
+  },
+  "hits": {
+    "r-n|k-n|p-n": [
+      "SAME-17@1"
+    ],
+    "r-s|k-s|p-s": [
+      "SAME-17@1"
+    ],
+    "r-e||": []
+  }
+}

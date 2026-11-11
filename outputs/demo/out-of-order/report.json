@@ -1,0 +1,103 @@
+{
+  "generator": "collector/1.0",
+  "portal": "http://127.0.0.1:46095/",
+  "intent": {
+    "regions": [
+      "中心区"
+    ],
+    "kinds": "all",
+    "projects": "all",
+    "max_attempts": 5,
+    "timeout_ms": 5000
+  },
+  "started_at": "2026-11-11T16:21:51.314872+00:00",
+  "finished_at": "2026-11-11T16:21:52.784949+00:00",
+  "entries": [
+    {
+      "region": {
+        "value": "r-n",
+        "label": "中心区",
+        "parent": null
+      },
+      "kind": {
+        "value": "k-n",
+        "label": "生产场所",
+        "parent": "r-n"
+      },
+      "project": {
+        "value": "p-n",
+        "label": "常规检测",
+        "parent": "k-n"
+      },
+      "status": "completed",
+      "attempts": 2,
+      "signature": "r-n|k-n|p-n",
+      "request_id": "Q-1",
+      "hits": [
+        "SAME-17@1"
+      ],
+      "note": "",
+      "error": null,
+      "history": [
+        {
+          "level": "region",
+          "attempt": 1,
+          "error": "区域选择被改变: 当前='r-s', 期望='r-n'"
+        }
+      ]
+    },
+    {
+      "region": {
+        "value": "r-s",
+        "label": "中心区",
+        "parent": null
+      },
+      "kind": {
+        "value": "k-s",
+        "label": "生产场所",
+        "parent": "r-s"
+      },
+      "project": {
+        "value": "p-s",
+        "label": "常规检测",
+        "parent": "k-s"
+      },
+      "status": "completed",
+      "attempts": 1,
+      "signature": "r-s|k-s|p-s",
+      "request_id": "Q-2",
+      "hits": [
+        "SAME-17@1"
+      ],
+      "note": "",
+      "error": null,
+      "history": []
+    }
+  ],
+  "unsatisfiable": [],
+  "materials": {
+    "SAME-17@1": {
+      "id": "SAME-17",
+      "version": "1",
+      "content": "r-n|k-n|p-n 检测资料",
+      "other_contents": [
+        "r-s|k-s|p-s 检测资料"
+      ],
+      "signatures": [
+        "r-n|k-n|p-n",
+        "r-s|k-s|p-s"
+      ]
+    }
+  },
+  "hits": {
+    "r-n|k-n|p-n": [
+      "SAME-17@1"
+    ],
+    "r-s|k-s|p-s": [
+      "SAME-17@1"
+    ]
+  },
+  "scenario_evidence": {
+    "rapid_parent_switch": true
+  }
+}

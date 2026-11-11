@@ -1,0 +1,11 @@
+{
+  "SAME-17@1": {
+    "id": "SAME-17",
+    "version": "1",
+    "content": "r-s|k-s|p-s 检测资料",
+    "other_contents": [],
+    "signatures": [
+      "r-s|k-s|p-s"
+    ]
+  }
+}
